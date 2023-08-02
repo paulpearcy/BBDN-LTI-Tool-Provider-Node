@@ -53,7 +53,8 @@ const updateAssetStatus = async(nonce, aud, statusUrl, resourceLinkId, assetId, 
             let payload = {
                 "processingProgress": assetStatus,
                 "assetId": assetId,
-                "resourceLinkId": resourceLinkId
+                "resourceLinkId": resourceLinkId,
+                "type": "originality"
             };
 
             if (assetStatus === "Processed") {
